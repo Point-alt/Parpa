@@ -1,0 +1,83 @@
+body {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  font-family: 'William-Regular';
+}
+
+/* header */
+.container_menu {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10%;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+  margin-left: 1.5%;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+/* меню слева */
+.left_items {
+  position: absolute;
+  transform: translateY(-50%) rotate(-90deg);
+  display: inline-flex;
+  left: -4vw;
+  top: 50%;
+  gap: 20%;
+}
+
+.left_items a {
+  text-decoration: none;
+  color: black;
+}
+
+.container_page {
+  width: 1120px;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  left: 25%;
+}
+
+.container_page h1 {
+  font-size: 110px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container_page h3 {
+  font-family: 'Object-Sans';
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top:50%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.first_slide {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  margin-right: auto;
+  
+}
