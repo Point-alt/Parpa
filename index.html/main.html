@@ -6,6 +6,7 @@
   <title>Parpa</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 <body>
   <header class="container">
@@ -18,7 +19,8 @@
     </div>
     <div class="container_menu">
       <div class="logo_icon">
-        <img src="/imgMain/logo.svg" alt="" width="">
+        <img class="black" src="/imgMain/logo.svg" alt="">
+        <img class="white" src="/imgMain/logo768.svg" alt="">
       </div>
       <div class="catalog">
         <p>Каталог</p>
@@ -27,7 +29,8 @@
         +7 495 122 22 46
       </div>
       <div class="menu">
-        <img src="/imgMain/menu.svg" alt="">
+        <img class="menu_black" src="/imgMain/menu.svg" alt="">
+        <img class="menu_white" src="/imgMain/menu768.svg" alt="">
       </div>
     </div>
   </header>
@@ -36,15 +39,20 @@
       <h1>
         Monochrome
       </h1>
-      <h3>
-        Спокойные и глубокие оттенки Monochrome<br>
-        настолько самодостаточны, что мы добавили<br>
-        к ним лишь элегантный крой Parpa
-      </h3>
-      <button class="">
-
-      </button>
-      <img class="first_slide" src="/imgMain/first_slide.svg" alt="">
+      <picture class="picture">
+        <source media="(max-width: 1024px)" srcset="/imgMain/first_slide1024.svg" type="image/svg+xml">
+        <img src="/imgMain/first_slide.svg" alt="">
+      </picture>
+      <div class="description">
+        <h3>
+          Спокойные и глубокие оттенки Monochrome<br>
+          настолько самодостаточны, что мы добавили<br>
+          к ним лишь элегантный крой Parpa
+        </h3>
+        <button class="btn">
+          <hr class="line"> ПЕРЕЙТИ
+        </button>
+      </div>
     </div>
   </section>
 </body>

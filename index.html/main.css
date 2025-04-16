@@ -1,29 +1,35 @@
 body {
   background-color: white;
-  width: 100%;
   height: auto;
   font-family: 'William-Regular';
+  background-image: 0;
 }
 
 /* header */
 .container_menu {
-  width: 95vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 10%;
   align-items: center;
-  padding: 10px;
+  padding: 0 50px;
   font-weight: 500;
-  margin-left: 1.5%;
 }
 
 .logo {
   font-size: 24px;
 }
 
+.white {
+  display: none;
+}
+
 .menu {
   margin-left: auto;
+}
+
+.menu_wihte {
+  display: none;
 }
 
 /* меню слева */
@@ -41,6 +47,18 @@ body {
   color: black;
 }
 
+.left_items a:hover{
+  color: #BA967D;
+}
+
+/* слайдер и названия */
+.page {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container_page {
   width: 1120px;
   height: 780px;
@@ -48,7 +66,6 @@ body {
   flex-direction: column;
   align-items: end;
   position: relative;
-  left: 25%;
 }
 
 .container_page h1 {
@@ -59,7 +76,8 @@ body {
   position: absolute;
   left: 0;
   bottom: 50%;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .container_page h3 {
@@ -71,13 +89,33 @@ body {
   position: absolute;
   left: 0;
   top:50%;
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
+  mix-blend-mode: difference;;
 }
 
-.first_slide {
+/* .first_slide {
   position: absolute;
   z-index: -1;
   top: 0;
   margin-right: auto;
-  
+} */
+
+.line {
+  border-color: #BA967D;
+  width: 100px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  display: flex;
+  gap: 20px;
+  color: #BA967D;
+  position: absolute;
+  left: 0;
+  bottom: 280px;
+}
+
+.btn:hover {
+  color: #ba967d8e;
 }
