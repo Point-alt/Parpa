@@ -93,13 +93,6 @@ body {
   mix-blend-mode: difference;;
 }
 
-/* .first_slide {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  margin-right: auto;
-} */
-
 .line {
   border-color: #BA967D;
   width: 100px;

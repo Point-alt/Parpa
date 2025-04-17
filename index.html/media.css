@@ -24,7 +24,7 @@
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imgMain/first_slide768.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
   }
   .picture img {
     display: none;
@@ -53,9 +53,34 @@
   .container_page h1 {
     color: white;
     font-weight: 200;
+    font-size: 60px;
   }
   .container_page h3 {
     color: white;
     font-weight: 100;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container_menu {
+    padding: 0;
+  }
+  .container_page h1 {
+    font-size: 40px;
+    bottom: 70%;
+    mix-blend-mode:color-dodge;
+    left: -40px;
+  }
+  .container_page h3 {
+    font-size: 10px;
+    top: 32%;
+    mix-blend-mode:color-dodge;
+    left: -40px;
+  }
+  .btn {
+    font-size: 10px;
+    bottom: 420px;
+    left: -40px;
   }
 }
